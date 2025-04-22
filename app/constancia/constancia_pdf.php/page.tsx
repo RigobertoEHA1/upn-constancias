@@ -1,16 +1,21 @@
 import { supabase } from '../../../lib/supabase'
 import { notFound } from 'next/navigation'
 
-export default async function Page({
-  searchParams
-}: { searchParams: { id_constancia?: string } }) {
-  const id = searchParams.id_constancia;
-  if (!id) return notFound();
+// @ts-expect-error Next.js App Router injecta searchParams
+export default async function Page({ searchParams }) {
+  const id_constancia =
+    typeof searchParams?.id_constancia === 'string'
+      ? searchParams.id_constancia
+      : Array.isArray(searchParams?.id_constancia)
+        ? searchParams.id_constancia[0]
+        : undefined
+
+  if (!id_constancia) return notFound();
 
   const { data: constancia } = await supabase
     .from('constancias')
     .select('*')
-    .eq('id', id)
+    .eq('id', id_constancia)
     .single();
 
   if (!constancia) {
