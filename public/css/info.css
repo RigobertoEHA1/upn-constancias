@@ -1,0 +1,32 @@
+#info {
+    background: #092432;
+	color:#198331; 
+    text-align: center;
+    width: auto;
+    max-width: 1000px;
+    padding: 10px;
+    border-radius: 10px;
+	box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.6);
+	margin-bottom: 25px;
+}
+
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-item {
+    width: 320px;
+    padding: 5px;
+}
+
+#info a {
+    font-size: 13px;
+    color:#198331;
+    text-decoration:none;
+}
+
+#info a:hover {
+    color: #fff;    
+}
