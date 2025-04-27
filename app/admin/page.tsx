@@ -7,15 +7,10 @@ import { QRCodeCanvas } from 'qrcode.react'
 const SEDE_FIJA = 'HUEJUTLA'
 
 const CURSOS = [
-  { value: 'Curso "El docente profesional que queremos"', label: 'Curso "El docente profesional que queremos"' },
-  { value: 'Curso "Estrategias didácticas para la enseñanza"', label: 'Curso "Estrategias didácticas para la enseñanza"' },
-  { value: 'Curso "Evaluación del aprendizaje"', label: 'Curso "Evaluación del aprendizaje"' },
-  { value: 'Curso "Tecnologías educativas"', label: 'Curso "Tecnologías educativas"' },
-  { value: 'Curso "Gestión del aula"', label: 'Curso "Gestión del aula"' },
-  { value: 'Curso "Desarrollo de competencias"', label: 'Curso "Desarrollo de competencias"' },
-  { value: 'Curso "Planeación didáctica"', label: 'Curso "Planeación didáctica"' },
-  { value: 'Curso "Inclusión educativa"', label: 'Curso "Inclusión educativa"' },
-  { value: 'Curso "Innovación educativa"', label: 'Curso "Innovación educativa"' }
+  { value: 'Curso “La enseñanza en la escuela multigrado”', label: 'Curso “La enseñanza en la escuela multigrado”' },
+  { value: 'Curso “El docente profesional que queremos”', label: 'Curso “El docente profesional que queremos”' },
+  { value: 'Curso “Historia del pensamiento en educación”', label: 'Curso “Historia del pensamiento en educación”' },
+  { value: 'Curso “Desarrollo del pensamiento en niñas niños y adolescentes”', label: 'Curso “Desarrollo del pensamiento en niñas niños y adolescentes”' }
 ];
 
 // Formatea fecha "yyyy-mm-dd" a "14 de octubre de 2023" (sin desfase)
