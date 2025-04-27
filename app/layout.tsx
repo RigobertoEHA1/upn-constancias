@@ -12,6 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es">
       <head>
         <link rel="icon" href="/imagen/upn-hidalgo.png" />
+        <title>Verificación de constancias</title>
       </head>
       <body>{children}</body>
     </html>
